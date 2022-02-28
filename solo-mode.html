@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="imagens/tic-tac-toe-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scores">
+        <p id="score_x">
+            Pontos do <span>X</span> :
+        </p>
+        <p id="score_o">
+            Pontos do <span>O</span> :
+        </p>
+    </div>
+
+    <table>
+        <caption><span class="span-1">Tic</span> Tac <span class="span-2">Toe</span> - 1p</caption>
+        <tbody>
+            <tr class="first-row">
+                <td class="first-ele" id="d01" onmousedown="jogar(d01)" ><br></td>
+                <td id="d02" onmousedown="jogar(d02)"><br></td>
+                <td class="last-ele" id="d03" onmousedown="jogar(d03)"><br></td>
+            </tr>
+            <tr>
+                <td class="first-ele" id="d04" onmousedown="jogar(d04)"><br></td>
+                <td id="d05" onmousedown="jogar(d05)"><br></td>
+                <td class="last-ele" id="d06" onmousedown="jogar(d06)"><br></td>
+            </tr>
+            <tr class="last-row">
+                <td class="first-ele" id="d07" onmousedown="jogar(d07)"><br></td>
+                <td id="d08" onmousedown="jogar(d08)"><br></td>
+                <td class="last-ele" id="d09" onmousedown="jogar(d09)"><br></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <input type="button" value="Reset" id="reset" onclick="reset()">
+        <input type="button" value="Finalizar" id="finalizar" onclick="_finalizar()">
+        <input type="button" value="Voltar" id="voltar" onclick="voltar()">
+    </div>
+
+    <div id="result">
+        
+    </div>
+
+    <footer>
+        <p><a href="https://github.com/GuilhermePereiraGuimaraes" target="_blank" rel="external">&copy; Guilherme Pereira</a></p>
+    </footer>
+    <script src="script-bot.js"></script>
+</body>
+</html>

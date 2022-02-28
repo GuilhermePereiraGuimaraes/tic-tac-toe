@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="shortcut icon" href="imagens/tic-tac-toe-icon.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'dimitri';
+            src: url(fontes/DIMIS___.TTF);
+        }
+        @font-face {
+            font-family: 'dimitri-2';
+            src: url(fontes/DIMITRI_.TTF);
+        }
+        body{
+            background-color:  #8856d9b4;
+        }
+        h1{
+            color: #240555;
+            font-size: 4vw;
+            font-family: dimitri,cursive;
+            text-align: center;
+        }
+        main{
+            text-align: center;
+            width: 40vw;
+            margin: auto;
+            background-color: #240555;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #00000094;
+        }
+        div{
+            background-color: #FE711A;
+            width: 200px;
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+            color: #240555;
+            font-size: 1.5em;
+            font-family: 'dimitri-2',cursive;
+            transition: transform 1s;
+            border-radius: 10px;
+        }
+        div:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+        }
+        span.span-1{
+            color: #7500E5;
+        }
+        span.span-2{
+            color: #FFAC36;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="span-1">Tic</span> Tac <span class="span-2">Toe</span></h1>
+    <main>
+        <div id="1-player" onmousedown="solo_mode()">
+            <img src="imagens/player1.jpg" alt="Solo mode">
+            <h2>1 Player</h2>
+        </div>
+        <div id="2-players" onmousedown="duo_mode()">
+            <img src="imagens/players2.jpg" alt="Duo mode">
+            <h2>2 Players</h2>
+        </div>
+    </main>
+
+    <script>
+        function solo_mode() {
+            window.location.assign("solo-mode.html")
+        }
+        function duo_mode() {
+            window.location.assign("2-players.html")
+        }
+    </script>
+</body>
+</html>
